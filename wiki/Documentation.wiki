@@ -1,4 +1,4 @@
-#summary The documention
+#summary The documentation
 #labels Featured,Phase-Deploy,Phase-Requirements
 
 = Introduction =
@@ -6,6 +6,15 @@
 The aim of this nagios plugin is to download a web page with all his content ( internals links only actually ). 
 
 A thread is created by ressource and all are get in parallel.
+
+Main features:
+
+    * Ruby small script, easy to understand and hack ...
+    * http/https
+    * Use the powerful and simple hpricot lib to parse html
+    * Multi-thread
+    * Keyword check
+    * Follow redirections 
 
 = Requirements =
  * Ruby 1.8
