@@ -3,7 +3,9 @@
 
 = Introduction =
 
-TODO
+The aim of this nagios plugin is to download a web page with all his content ( internals links only actually ). 
+
+A thread is created by ressource and all are get in parallel.
 
 = Requirements =
  * Ruby 1.8
@@ -33,6 +35,15 @@ Help for commands:
                   verbose
   -vv         (Optional, takes 0 arguments)
                   more verbose !
+}}}
+
+To use in nagios :
+
+{{{
+define command{
+  command_name  check-webpage
+  command_line  $USER1$/check_webpage.rb -u $ARG1$
+}
 }}}
 
 = Examples =
