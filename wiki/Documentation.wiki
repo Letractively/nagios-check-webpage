@@ -6,8 +6,34 @@
 TODO
 
 = Requirements =
+ * Ruby 1.8
+ * [http://wiki.github.com/why/hpricot hpricot]
+ * [http://optiflag.rubyforge.org/ optiflag]
 
 = Usage =
+{{{
+$ ./check_webpage.rb -h
+
+Help for commands:
+  -w          (Optional, takes 1 argument)
+                  --warn, default 5,  warn time (s)
+  -e          (Optional, takes 0 arguments)
+                  extended mode, see the documentation
+  -k          (Optional, takes 1 argument)
+                  --key, check for keyword
+  -h          (Optional, takes 0 arguments)
+                  Help
+  -u          (Required, takes 1 argument)
+                  --url, absolute: [http://www.google.com]
+  -c          (Optional, takes 1 argument)
+                  --critical, default 60,  Critical time (s)
+  -w2         (Optional, takes 1 argument)
+                  --warn2, default 10,  warn2 time (s), use with '-e'
+  -v          (Optional, takes 0 arguments)
+                  verbose
+  -vv         (Optional, takes 0 arguments)
+                  more verbose !
+}}}
 
 = Examples =
 
