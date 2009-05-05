@@ -37,6 +37,10 @@ Help for commands:
                   more verbose !
 }}}
 
+ * *`-e`* Extended mode - use unknow status like a second level warning. Use with caution ...
+
+Do not use verbose mode with nagios ...
+
 To use in nagios :
 
 {{{
