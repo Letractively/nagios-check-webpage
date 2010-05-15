@@ -1,4 +1,4 @@
-#summary The documentation
+#summary Documentation en français
 #labels Featured,Phase-Deploy
 
 = Introduction =
