@@ -15,6 +15,7 @@ Main features:
     * Multi-thread
     * Keyword check
     * Follow redirections 
+    * Download all the links on the page or only the html 
 
 = Requirements =
  * Tested with Ruby
@@ -28,24 +29,30 @@ Main features:
 $ ./check_webpage.rb -h
 
 Help for commands:
-  -w          (Optional, takes 1 argument)
-                  --warn, default 5,  warn time (s)
-  -e          (Optional, takes 0 arguments)
-                  extended mode, see the documentation
-  -k          (Optional, takes 1 argument)
-                  --key, check for keyword
   -h          (Optional, takes 0 arguments)
                   Help
-  -u          (Required, takes 1 argument)
-                  --url, absolute: [http://www.google.com]
-  -c          (Optional, takes 1 argument)
-                  --critical, default 60,  Critical time (s)
-  -w2         (Optional, takes 1 argument)
-                  --warn2, default 10,  warn2 time (s), use with '-e'
   -v          (Optional, takes 0 arguments)
                   verbose
   -vv         (Optional, takes 0 arguments)
                   more verbose !
+  -e          (Optional, takes 0 arguments)
+                  extended mode, see the documentation
+  -H          (Optional, takes 0 arguments)
+                  --span-hosts, download from other hosts
+  -c          (Optional, takes 1 argument)
+                  --critical, default 60,  Critical time (s)
+  -w          (Optional, takes 1 argument)
+                  --warn, default 5,  warn time (s)
+  -w2         (Optional, takes 1 argument)
+                  --warn2, default 10,  warn2 time (s), use with '-e'
+  -k          (Optional, takes 1 argument)
+                  --key, check for keyword
+  -z          (Optional, takes 0 arguments)
+                  --gzip, add gzip,deflate to http headers
+  -n          (Optional, takes 0 arguments)
+                  --no-inner-links, do not dl inner links, get only the html
+  -u          (Required, takes 1 argument)
+                  --url, absolute: [http://www.google.com]
 }}}
 
  * *-c* Critical status time. If all or only one element is more than this time to download, a Critical status is returned.
