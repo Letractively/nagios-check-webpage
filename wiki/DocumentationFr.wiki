@@ -15,6 +15,7 @@ Un processus fils est créé par ressource et toutes sont téléchargées en par
  * Multi-threads
  * Recherche de mot clef
  * Suit les redirections
+ * Télécharge tous les liens de la page ou juste le HTML
 
 
 = Dépendances =
@@ -47,6 +48,10 @@ Help for commands:
                   verbeux
   -vv         (Optionnel, prend 0 arguments)
                   plus verbeux !
+  -z          (Optionnel, prend 0 arguments)
+                  --gzip, ajoute gzip,deflate aux entêtes HTTP
+  -n          (Optionnel, prend 0 arguments)
+                  --no-inner-links, ne télécharge pas les liens, récupère uniquement le HTML (permet de remplacer check_http)
 }}}
 
  * *-c* Critical status time. Si tous ou un seul élément est plus lent que ce temps, un status critique sera retourné.
