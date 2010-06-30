@@ -50,7 +50,7 @@ Help for commands:
   -z          (Optional, takes 0 arguments)
                   --gzip, add gzip,deflate to http headers
   -n          (Optional, takes 0 arguments)
-                  --no-inner-links, do not dl inner links, get only the html
+                  --no-inner-links, do not dl inner links, get only the html (to use instead of check_http)
   -u          (Required, takes 1 argument)
                   --url, absolute: [http://www.google.com]
 }}}
