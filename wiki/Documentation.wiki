@@ -19,8 +19,9 @@ Main features:
 
 = Requirements =
  * Tested with Ruby
-   * 1.8.6
-   * ~~1.9.1p378~~
+   * 1.8.7
+   * 1.9.2
+
  * [http://wiki.github.com/why/hpricot hpricot]
  * [http://optiflag.rubyforge.org/ optiflag]
 
